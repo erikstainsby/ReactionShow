@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		034CDDE114FFDDEE00193D04 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034CDDE014FFDDEE00193D04 /* Cocoa.framework */; };
 		034CDDEB14FFDDEE00193D04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 034CDDE914FFDDEE00193D04 /* InfoPlist.strings */; };
+		034CDDF314FFDE0D00193D04 /* RSTrixiePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 034CDDF214FFDE0D00193D04 /* RSTrixiePlugin.framework */; };
+		034CDDF814FFDE2F00193D04 /* ReactionShow.h in Headers */ = {isa = PBXBuildFile; fileRef = 034CDDF514FFDE2F00193D04 /* ReactionShow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		034CDDF914FFDE2F00193D04 /* ReactionShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 034CDDF614FFDE2F00193D04 /* ReactionShow.m */; };
+		034CDDFA14FFDE2F00193D04 /* ReactionShow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 034CDDF714FFDE2F00193D04 /* ReactionShow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,9 +21,13 @@
 		034CDDE314FFDDEE00193D04 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		034CDDE414FFDDEE00193D04 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		034CDDE514FFDDEE00193D04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		034CDDE814FFDDEE00193D04 /* ReactionShow-Info.plist */ = {isa = PBXFileReference; path = "ReactionShow-Info.plist"; sourceTree = "<group>"; };
+		034CDDE814FFDDEE00193D04 /* ReactionShow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReactionShow-Info.plist"; sourceTree = "<group>"; };
 		034CDDEA14FFDDEE00193D04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		034CDDEC14FFDDEE00193D04 /* ReactionShow-Prefix.pch */ = {isa = PBXFileReference; path = "ReactionShow-Prefix.pch"; sourceTree = "<group>"; };
+		034CDDEC14FFDDEE00193D04 /* ReactionShow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactionShow-Prefix.pch"; sourceTree = "<group>"; };
+		034CDDF214FFDE0D00193D04 /* RSTrixiePlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RSTrixiePlugin.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Workspace_Trixie-axnfrbtrkoszpiehooyethumxqxg/Build/Products/Debug/RSTrixiePlugin.framework"; sourceTree = "<group>"; };
+		034CDDF514FFDE2F00193D04 /* ReactionShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactionShow.h; sourceTree = "<group>"; };
+		034CDDF614FFDE2F00193D04 /* ReactionShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactionShow.m; sourceTree = "<group>"; };
+		034CDDF714FFDE2F00193D04 /* ReactionShow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReactionShow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				034CDDF314FFDE0D00193D04 /* RSTrixiePlugin.framework in Frameworks */,
 				034CDDE114FFDDEE00193D04 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +63,7 @@
 		034CDDDF14FFDDEE00193D04 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				034CDDF214FFDE0D00193D04 /* RSTrixiePlugin.framework */,
 				034CDDE014FFDDEE00193D04 /* Cocoa.framework */,
 				034CDDE214FFDDEE00193D04 /* Other Frameworks */,
 			);
@@ -74,6 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				034CDDE714FFDDEE00193D04 /* Supporting Files */,
+				034CDDF514FFDE2F00193D04 /* ReactionShow.h */,
+				034CDDF614FFDE2F00193D04 /* ReactionShow.m */,
+				034CDDF714FFDE2F00193D04 /* ReactionShow.xib */,
 			);
 			path = ReactionShow;
 			sourceTree = "<group>";
@@ -90,6 +103,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		034CDDF414FFDE1300193D04 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034CDDF814FFDE2F00193D04 /* ReactionShow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		034CDDDC14FFDDEE00193D04 /* ReactionShow */ = {
 			isa = PBXNativeTarget;
@@ -98,6 +122,7 @@
 				034CDDD914FFDDEE00193D04 /* Sources */,
 				034CDDDA14FFDDEE00193D04 /* Frameworks */,
 				034CDDDB14FFDDEE00193D04 /* Resources */,
+				034CDDF414FFDE1300193D04 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -140,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				034CDDEB14FFDDEE00193D04 /* InfoPlist.strings in Resources */,
+				034CDDFA14FFDE2F00193D04 /* ReactionShow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				034CDDF914FFDE2F00193D04 /* ReactionShow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,10 +244,15 @@
 		034CDDF014FFDDEE00193D04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Code/Workspaces/Trixie/RSTrixiePlugin/RSTrixiePlugin",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Workspace_Trixie-axnfrbtrkoszpiehooyethumxqxg/Build/Products/Debug\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReactionShow/ReactionShow-Prefix.pch";
 				INFOPLIST_FILE = "ReactionShow/ReactionShow-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "@executable_path/../Plugins";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -229,10 +261,15 @@
 		034CDDF114FFDDEE00193D04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Code/Workspaces/Trixie/RSTrixiePlugin/RSTrixiePlugin",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Workspace_Trixie-axnfrbtrkoszpiehooyethumxqxg/Build/Products/Debug\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReactionShow/ReactionShow-Prefix.pch";
 				INFOPLIST_FILE = "ReactionShow/ReactionShow-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "@executable_path/../Plugins";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -257,6 +294,7 @@
 				034CDDF114FFDDEE00193D04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
